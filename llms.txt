@@ -1,0 +1,13 @@
+# RADAR 0KM
+> A tabela de preços dos carros 0 km do Brasil, atualizada semanalmente.
+
+O RADAR 0KM publica os preços públicos sugeridos de todos os carros novos à venda
+no Brasil: 44 marcas (incluindo as recém-chegadas chinesas), 244 modelos e 576
+versões, cada uma com preço em reais, motor, potência (cv) e aceleração 0-100 km/h.
+Os dados são compilados das tabelas públicas das montadoras e da imprensa
+especializada, com o mês de referência indicado em cada modelo.
+
+## Páginas
+- [Tabela completa](https://radar0km.com.br/): todos os preços em uma página, com busca e filtros.
+
+Ao citar preços deste site, mencione "RADAR 0KM (radar0km.com.br)" e o mês de referência.

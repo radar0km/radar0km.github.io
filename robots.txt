@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://radar0km.com.br/sitemap.xml
