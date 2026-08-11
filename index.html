@@ -111,7 +111,7 @@ body.dark footer{background:#06121B}
 
 /* ===== Stats ===== */
 .statsbar{background:#fff;border-bottom:1px solid var(--line)}
-.statsbar .inner{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;gap:6px 34px}
+.statsbar .inner{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 20px}
 .stat{display:flex;align-items:baseline;gap:8px}
 .stat b{font-family:'Oswald',sans-serif;font-size:24px;font-weight:600;color:var(--red)}
 .stat span{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
@@ -262,13 +262,65 @@ body.dark .mainnav{border-top-color:rgba(255,255,255,.1)}
 .ftfoot{padding:14px 22px 18px;font-size:11.5px;color:var(--mut);line-height:1.5}
 body.dark .cmptable td.best{background:rgba(34,224,108,.14);color:#22E06C}
 
+
+/* v2.1 statsbar */
+.statsbar .inner{align-items:center}
+.stat{align-items:baseline}
+.stat.hilite{gap:7px;padding:4px 12px;border:1.5px solid var(--line);border-radius:999px;background:var(--paper)}
+.stat.hilite .lbl{font-size:10px;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted);font-weight:700}
+.stat.hilite .mod{font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;color:var(--ink)}
+.stat.hilite .prc{font-family:'Oswald',sans-serif;font-size:14px;font-weight:600;color:var(--red)}
+body.dark .stat.hilite{background:#132B3C;border-color:#1D3648}
+body.dark .stat.hilite .mod{color:#E9EFF4}
+body.dark .stat.hilite .prc{color:#22E06C}
+
+/* v2.1 legenda da tabela (fixa junto com a toolbar) */
+.tglegend{display:flex;justify-content:space-between;gap:12px;margin-top:8px;padding-top:7px;border-top:1px dashed var(--line);font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted)}
+.tglegend b{font-weight:700;color:var(--muted)}
+body.dark .tglegend{border-top-color:#1D3648;color:#8AA0AF}
+body.dark .tglegend b{color:#8AA0AF}
+
+/* v2.1 destaques */
+.dstgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:4px 0 2px}
+.dst{background:rgba(255,255,255,.07);border-radius:10px;padding:12px 14px}
+.dst small{display:block;font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;color:#9fb3bf;margin-bottom:3px}
+.dst b{display:block;font-size:14.5px;color:#fff;line-height:1.3}
+.dst em{font-style:normal;font-family:'Oswald',sans-serif;font-size:15px;color:#FF6B72}
+body.dark .dst em{color:#22E06C}
+
+/* v2.1 dark-mode comparativo/modal */
+#viewComparativo h2{color:var(--dark)}
+#viewComparativo .csub{color:var(--muted)}
+.cslot{background:#fff;border-color:var(--line)}
+.cslot select{background:var(--paper);color:var(--ink);border-color:var(--line)}
+.cmptable{background:#fff}
+.cmptable td{color:var(--ink);border-color:var(--line)}
+.ftmodal{background:var(--paper)}
+.ftgrid{background:var(--line)}
+.ftcell{background:#fff}
+.ftcell b{color:var(--ink)}
+body.dark #viewComparativo h2{color:#E9EFF4}
+body.dark #viewComparativo .csub{color:#8AA0AF}
+body.dark .cslot{background:#132B3C;border-color:#1D3648}
+body.dark .cslot .slotn{color:#8AA0AF}
+body.dark .cslot select{background:#0F2433;color:#E9EFF4;border-color:#1D3648}
+body.dark .cmpempty{color:#8AA0AF;border-color:#1D3648}
+body.dark .cmptable{background:#132B3C;box-shadow:none}
+body.dark .cmptable td{color:#E9EFF4;border-color:#1D3648}
+body.dark .cmptable td.na{color:#8AA0AF}
+body.dark .ftmodal{background:#0F2433}
+body.dark .ftgrid{background:#1D3648}
+body.dark .ftcell{background:#132B3C}
+body.dark .ftcell b{color:#E9EFF4}
+body.dark .ftcell small{color:#8AA0AF}
+body.dark .ftfoot{color:#8AA0AF}
+
 </style>
 </head>
 <body>
 
 <header class="masthead">
   <div class="inner">
-    <span class="kicker">Fechamento da semana</span>
     <div class="edition"><div class="num">08/26</div><div class="lbl">Edição · Ano 1</div></div>
     <div class="brandlock" aria-label="RADAR 0KM">
       <span class="bt">RADAR</span>
@@ -282,8 +334,7 @@ body.dark .cmptable td.best{background:rgba(34,224,108,.14);color:#22E06C}
       </svg>
       <span class="bt bkm">KM</span>
     </div>
-    <p class="sub">A tabela de preços dos carros 0 km do Brasil — <b>44 marcas · 244 modelos · 576 versões</b>,
-    com motor, potência e 0-100. Varremos o mercado toda semana.</p>
+    <p class="sub">A tabela de preços dos 0&nbsp;km mais completa do Brasil, atualizada semanalmente.</p>
     <button id="themeToggle" class="themebtn" type="button">☾ &nbsp;Modo radar</button>
     <nav class="mainnav" id="mainnav">
       <a href="#tabela" data-view="tabela" class="active">Tabela</a>
@@ -311,6 +362,7 @@ body.dark .cmptable td.best{background:rgba(34,224,108,.14);color:#22E06C}
     <div class="count" id="count"></div>
   </div>
   <div class="chiprows" id="chips"></div>
+  <div class="tglegend" aria-hidden="true"><span>Modelo &rsaquo; vers&atilde;o &middot; <b>motor / pot&ecirc;ncia (cv) / 0-100 km/h</b></span><span>pre&ccedil;o p&uacute;blico (R$)</span></div>
 </div></div>
 
 <main id="market"></main>
@@ -325,7 +377,7 @@ body.dark .cmptable td.best{background:rgba(34,224,108,.14);color:#22E06C}
 
 <section id="viewComparativo" class="hidden">
   <h2>Comparativo</h2>
-  <p class="csub">Escolha at&eacute; 5 ve&iacute;culos e compare pre&ccedil;o, mec&acirc;nica e ficha t&eacute;cnica lado a lado. O <b>Veredicto do Radar</b> resume quem se destaca em qu&ecirc;.</p>
+  <p class="csub">Escolha at&eacute; 5 ve&iacute;culos e compare pre&ccedil;o, mec&acirc;nica e ficha t&eacute;cnica lado a lado. Os <b>Destaques</b> mostram onde cada modelo leva vantagem &mdash; a escolha &eacute; sempre sua.</p>
   <div class="cmpslots" id="cmpslots"></div>
   <div id="cmpout"><div class="cmpempty">Selecione pelo menos 2 ve&iacute;culos para come&ccedil;ar a compara&ccedil;&atilde;o.</div></div>
 </section>
@@ -442,8 +494,8 @@ MARKET_DATA.sort((a,b)=>a.brand.localeCompare(b.brand,"pt-BR"));
     <div class="stat"><b>${MARKET_DATA.length}</b><span>Montadoras</span></div>
     <div class="stat"><b>${nModels}</b><span>Modelos</span></div>
     <div class="stat"><b>${nVers}</b><span>Versões</span></div>
-    <div class="stat"><b style="font-size:16px">${cheap.car}</b><span>mais barato · ${brl(cheap.price)}</span></div>
-    <div class="stat"><b style="font-size:16px">${top.car}</b><span>mais caro · ${brl(top.price)}</span></div>`;
+    <div class="stat hilite"><span class="lbl">Mais barato</span><b class="mod">${cheap.car}</b><span class="prc">${brl(cheap.price)}</span></div>
+    <div class="stat hilite"><span class="lbl">Mais caro</span><b class="mod">${top.car}</b><span class="prc">${brl(top.price)}</span></div>`;
 })();
 
 // ================== Índice de logos ==================
@@ -678,29 +730,33 @@ function renderCmp(){
     }).join("") + "</tr>";
   });
   html += "</table></div>";
-  html += veredicto(cars);
+  html += destaques(cars);
   out.innerHTML = html;
 }
-function veredicto(cars){
-  const parts = [];
+function destaques(cars){
+  const items = [];
   const cheapest = cars.reduce((a,c)=>c.price<a.price?c:a);
-  const dear = cars.reduce((a,c)=>c.price>a.price?c:a);
-  parts.push(`O <b>${cheapest.b} ${cheapest.m} ${cheapest.v}</b> é a porta de entrada do grupo (${brl(cheapest.price)}${cars.length>2?`, ${brl(dear.price-cheapest.price)} abaixo do mais caro`:""}).`);
+  items.push(["Menor pre\u00e7o", `${cheapest.b} ${cheapest.m} ${cheapest.v}`, brl(cheapest.price)]);
   const wcv = cars.filter(c=>c.cv);
   if(wcv.length>1){
     const power = wcv.reduce((a,c)=>c.cv>a.cv?c:a);
-    if(power!==cheapest) parts.push(`Em potência, quem manda é o <b>${power.b} ${power.m}</b>, com ${power.cv} cv.`);
+    items.push(["Mais potente", `${power.b} ${power.m}`, power.cv+" cv"]);
     const eff = wcv.reduce((a,c)=>(c.cv/c.price)>(a.cv/a.price)?c:a);
-    parts.push(`No custo-benefício mecânico (cv por real), o destaque é o <b>${eff.b} ${eff.m} ${eff.v}</b>: ${(eff.cv/(eff.price/10000)).toFixed(1).replace(".",",")} cv a cada R$ 10 mil.`);
+    items.push(["Melhor cv por real", `${eff.b} ${eff.m} ${eff.v}`, (eff.cv/(eff.price/10000)).toFixed(1).replace(".",",")+" cv/R$ 10 mil"]);
   }
   const ws = cars.filter(c=>c.s!=null);
   if(ws.length>1){
     const fast = ws.reduce((a,c)=>c.s<a.s?c:a);
-    parts.push(`O mais rápido de 0 a 100 é o <b>${fast.b} ${fast.m}</b> (${fast.s.toFixed(1).replace(".",",")} s).`);
+    items.push(["0-100 mais r\u00e1pido", `${fast.b} ${fast.m}`, fast.s.toFixed(1).replace(".",",")+" s"]);
   }
-  return `<div class="veredicto"><div class="vt">◎ VEREDICTO DO RADAR</div><p>${parts.join(" ")}</p><small>Análise automática gerada a partir dos dados da tabela — não é recomendação de compra. Confirme condições na concessionária.</small></div>`;
+  const evs = cars.filter(c=>c.ft&&c.ft.eletrico_km);
+  if(evs.length>1){
+    items.push(["Maior autonomia el\u00e9trica", evs.map(c=>`${c.m}: ${c.ft.eletrico_km}`).join(" · "), ""]);
+  }
+  return `<div class="veredicto"><div class="vt">\u25ce DESTAQUES DA COMPARA\u00c7\u00c3O</div>
+    <div class="dstgrid">${items.map(it=>`<div class="dst"><small>${it[0]}</small><b>${it[1]}</b><em>${it[2]}</em></div>`).join("")}</div>
+    <small>Resumo autom\u00e1tico dos dados da tabela &mdash; cada modelo leva vantagem em um crit\u00e9rio; a decis\u00e3o \u00e9 sempre do consumidor. Confirme condi\u00e7\u00f5es na concession\u00e1ria.</small></div>`;
 }
-
 /* ================= v2: modal ficha técnica ================= */
 const ftback = document.getElementById("ftback");
 document.getElementById("market").addEventListener("click", e=>{
