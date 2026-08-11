@@ -42,7 +42,7 @@ h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(38px,7vw,64px
 h1 .thin{color:#bbb;font-weight:400}
 .masthead .sub{margin-top:12px;color:#c9c9c9;font-size:15px;max-width:640px;line-height:1.5}
 .edition{position:absolute;top:34px;right:24px;text-align:right;font-family:'Oswald',sans-serif}
-.edition .num{font-size:44px;font-weight:700;color:var(--red);line-height:1}
+.edition .num{font-size:36px;font-weight:700;color:var(--red);line-height:1}
 .edition .lbl{font-size:11px;letter-spacing:2px;color:#999;text-transform:uppercase}
 
 /* ===== Marca RADAR 0KM ===== */
@@ -317,10 +317,11 @@ body.dark .ftfoot{color:#8AA0AF}
 
 
 /* v2.2 socials no masthead */
-.edition .socials{display:flex;gap:10px;justify-content:flex-end;margin-top:12px}
-.edition .socials a{color:#8a8f98;display:inline-flex;transition:.15s}
+.edition .socials{display:flex;flex-direction:column;gap:7px;align-items:flex-end;margin-top:12px}
+.edition .socials a{color:#8a8f98;display:inline-flex;align-items:center;gap:7px;transition:.15s;text-decoration:none}
+.edition .socials a span{font-family:'Oswald',sans-serif;font-size:12.5px;letter-spacing:1px;font-weight:500}
 .edition .socials a:hover{color:var(--red)}
-.edition .socials svg{width:21px;height:21px}
+.edition .socials svg{width:17px;height:17px}
 @media(max-width:720px){.edition .socials{justify-content:flex-start}}
 body.dark .edition .socials a{color:#8AA0AF}
 body.dark .edition .socials a:hover{color:#22E06C}
@@ -331,11 +332,11 @@ body.dark .edition .socials a:hover{color:#22E06C}
 
 <header class="masthead">
   <div class="inner">
-    <div class="edition"><div class="num">08/26</div><div class="lbl">&Uacute;ltima atualiza&ccedil;&atilde;o</div>
+    <div class="edition"><div class="num">11/08/26</div><div class="lbl">&Uacute;ltima atualiza&ccedil;&atilde;o</div>
       <div class="socials">
-        <a href="https://www.instagram.com/radar0km/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram @radar0km"><svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.4" cy="6.6" r="1.35" fill="currentColor"/></svg></a>
-        <a href="https://www.tiktok.com/@radar0km" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok @radar0km"><svg viewBox="0 0 24 24"><path d="M15.2 3.2c.4 2.3 1.9 3.8 4.3 4v3.1c-1.6.05-3-.4-4.3-1.3v6.1c0 3.6-2.5 5.9-5.6 5.9-2.9 0-5.1-2.1-5.1-5 0-3.1 2.6-5.2 5.9-4.9v3.2c-1.6-.4-2.9.4-2.9 1.8 0 1.1.9 1.9 2.1 1.9 1.4 0 2.4-1 2.4-2.9V3.2h3.2Z" fill="currentColor"/></svg></a>
-        <a href="https://www.youtube.com/@radar0km" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube @radar0km"><svg viewBox="0 0 24 24"><rect x="2" y="5.4" width="20" height="13.2" rx="3.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M10.2 9.2 15 12l-4.8 2.8V9.2Z" fill="currentColor"/></svg></a>
+        <a href="https://www.instagram.com/radar0km/" target="_blank" rel="noopener" title="Instagram"><svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.4" cy="6.6" r="1.35" fill="currentColor"/></svg><span>@radar0km</span></a>
+        <a href="https://www.tiktok.com/@radar0km" target="_blank" rel="noopener" title="TikTok"><svg viewBox="0 0 24 24"><path d="M15.2 3.2c.4 2.3 1.9 3.8 4.3 4v3.1c-1.6.05-3-.4-4.3-1.3v6.1c0 3.6-2.5 5.9-5.6 5.9-2.9 0-5.1-2.1-5.1-5 0-3.1 2.6-5.2 5.9-4.9v3.2c-1.6-.4-2.9.4-2.9 1.8 0 1.1.9 1.9 2.1 1.9 1.4 0 2.4-1 2.4-2.9V3.2h3.2Z" fill="currentColor"/></svg><span>@radar0km</span></a>
+        <a href="https://www.youtube.com/@radar0km" target="_blank" rel="noopener" title="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5.4" width="20" height="13.2" rx="3.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M10.2 9.2 15 12l-4.8 2.8V9.2Z" fill="currentColor"/></svg><span>@radar0km</span></a>
       </div>
     </div>
     <div class="brandlock" aria-label="RADAR 0KM">
