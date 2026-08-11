@@ -214,6 +214,54 @@ footer b{color:#fff}
   .mcell{width:100%;border-right:none;border-bottom:1px dashed var(--line);padding-bottom:8px}
   .brange{display:none}
 }
+
+/* ===== v2: nav ===== */
+.mainnav{display:flex;gap:4px;margin-top:18px;border-top:1px solid rgba(255,255,255,.14);padding-top:14px}
+.mainnav a{font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c9c9c9;text-decoration:none;padding:8px 16px;border-radius:8px;transition:.15s}
+.mainnav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.mainnav a.active{color:#fff;box-shadow:inset 0 -3px 0 var(--red)}
+body.dark .mainnav{border-top-color:rgba(255,255,255,.1)}
+/* ===== v2: comparativo ===== */
+#viewComparativo{max-width:1080px;margin:0 auto;padding:28px 24px 60px}
+#viewComparativo h2{font-family:'Oswald',sans-serif;font-size:28px;margin:0 0 6px;color:var(--ink)}
+#viewComparativo .csub{color:var(--mut);font-size:14.5px;margin:0 0 22px;line-height:1.5}
+.cmpslots{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:26px}
+.cslot{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px}
+.cslot .slotn{font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;color:var(--mut);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.cslot select{width:100%;margin-bottom:7px;padding:8px 6px;border:1.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font-size:13px;font-family:inherit}
+.cslot .clr{background:none;border:none;color:var(--red);cursor:pointer;font-size:15px;line-height:1;padding:2px}
+.cmptable{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 1px 0 var(--line)}
+.cmptable th,.cmptable td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:center;vertical-align:middle}
+.cmptable th{background:var(--dark);color:#fff;font-family:'Oswald',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.5px}
+.cmptable td:first-child,.cmptable th:first-child{text-align:left;font-weight:700;white-space:nowrap}
+.cmptable td.best{background:rgba(11,122,62,.12);color:var(--grn,#0B7A3E);font-weight:700}
+.cmptable td.na{color:var(--mut);opacity:.6}
+.cmptable .carhead{font-weight:700;line-height:1.25}
+.cmptable .carhead small{display:block;font-weight:500;color:#c9c9c9;font-size:11px}
+.veredicto{margin-top:22px;background:var(--dark);border-left:8px solid var(--red);border-radius:12px;padding:20px 24px;color:#fff}
+.veredicto .vt{font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;letter-spacing:2px;color:var(--red);margin-bottom:8px}
+.veredicto p{margin:0;font-size:14.5px;line-height:1.65;color:#E8E8E8}
+.veredicto small{display:block;margin-top:10px;color:#9aa;font-size:11.5px}
+.cmpempty{text-align:center;color:var(--mut);padding:50px 20px;font-size:15px;border:2px dashed var(--line);border-radius:12px}
+/* ===== v2: modal ficha ===== */
+.vrow{cursor:pointer}
+.vrow:hover .vn{color:var(--red)}
+#ftback{position:fixed;inset:0;background:rgba(10,10,14,.62);z-index:90;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px)}
+#ftback.hidden{display:none}
+.ftmodal{background:var(--bg);border-radius:16px;max-width:560px;width:100%;max-height:86vh;overflow:auto;box-shadow:0 24px 80px rgba(0,0,0,.45)}
+.fthead{background:var(--dark);color:#fff;padding:22px 26px;border-bottom:5px solid var(--red);position:relative;border-radius:16px 16px 0 0}
+.fthead .fb{font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;letter-spacing:2px;color:var(--red);text-transform:uppercase}
+.fthead .fm{font-family:'Oswald',sans-serif;font-weight:700;font-size:24px;line-height:1.15;margin:2px 0}
+.fthead .fv{color:#c9c9c9;font-size:14px}
+.fthead .fp{font-family:'Oswald',sans-serif;font-weight:700;font-size:30px;color:#fff;margin-top:10px}
+.fthead .fclose{position:absolute;top:14px;right:16px;background:none;border:none;color:#c9c9c9;font-size:26px;cursor:pointer;line-height:1}
+.ftgrid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);padding:1px}
+.ftcell{background:var(--card);padding:12px 16px}
+.ftcell small{display:block;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--mut);margin-bottom:2px}
+.ftcell b{font-size:15px;color:var(--ink)}
+.ftfoot{padding:14px 22px 18px;font-size:11.5px;color:var(--mut);line-height:1.5}
+body.dark .cmptable td.best{background:rgba(34,224,108,.14);color:#22E06C}
+
 </style>
 </head>
 <body>
@@ -237,9 +285,16 @@ footer b{color:#fff}
     <p class="sub">A tabela de preços dos carros 0 km do Brasil — <b>44 marcas · 244 modelos · 576 versões</b>,
     com motor, potência e 0-100. Varremos o mercado toda semana.</p>
     <button id="themeToggle" class="themebtn" type="button">☾ &nbsp;Modo radar</button>
+    <nav class="mainnav" id="mainnav">
+      <a href="#tabela" data-view="tabela" class="active">Tabela</a>
+      <a href="/noticias.html">Not&iacute;cias</a>
+      <a href="#comparativo" data-view="comparativo">Comparativo</a>
+    </nav>
+
   </div>
 </header>
 
+<div id="viewTabela">
 <div class="statsbar"><div class="inner" id="stats"></div></div>
 
 <div class="logoindex"><div class="inner">
@@ -266,6 +321,17 @@ footer b{color:#fff}
   <p class="sub">Quem está chegando, quem saiu e quem ainda não vende oficialmente por aqui.</p>
   <div class="radargrid" id="radargrid"></div>
 </section>
+</div><!-- /viewTabela -->
+
+<section id="viewComparativo" class="hidden">
+  <h2>Comparativo</h2>
+  <p class="csub">Escolha at&eacute; 5 ve&iacute;culos e compare pre&ccedil;o, mec&acirc;nica e ficha t&eacute;cnica lado a lado. O <b>Veredicto do Radar</b> resume quem se destaca em qu&ecirc;.</p>
+  <div class="cmpslots" id="cmpslots"></div>
+  <div id="cmpout"><div class="cmpempty">Selecione pelo menos 2 ve&iacute;culos para come&ccedil;ar a compara&ccedil;&atilde;o.</div></div>
+</section>
+<div id="ftback" class="hidden" role="dialog" aria-modal="true"></div>
+
+
 
 <footer><div class="inner">
   <b>Fontes:</b> tabelas públicas de preços e sites oficiais das marcas, compiladas de Autoo, Quatro Rodas, Mobiauto, iCarros, Motor1/UOL Carros, InsideEVs e Notícias Automotivas — consulta em agosto de 2026.
@@ -428,7 +494,7 @@ function buildBrand(b){
     const vs = m.versions.map(v=>{
       const spec = v.e ? `<span class="vspec">${v.e} / ${v.cv} cv${v.s!=null?` / ${v.s.toFixed(1).replace(".",",")} s`:""}</span>` : "";
       return `
-      <div class="vrow ${v.price===mn&&m.versions.length>1?"cheap":""} ${v.price===mx&&m.versions.length>1?"top":""}" data-vn="${norm(v.name+" "+(v.e||""))}">
+      <div class="vrow ${v.price===mn&&m.versions.length>1?"cheap":""} ${v.price===mx&&m.versions.length>1?"top":""}" data-vn="${norm(v.name+" "+(v.e||""))}" data-fb="${b.brand.replace(/"/g,'&quot;')}" data-fm="${m.model.replace(/"/g,'&quot;')}" data-fv="${v.name.replace(/"/g,'&quot;')}" title="Clique para ver a ficha técnica">
         <span class="vwrap"><span class="vn">${v.name}</span>${spec}</span><span class="lead"></span><span class="vp">${brl(v.price)}</span>
       </div>`;}).join("");
     return `<div class="mrow" data-model="${norm(m.model)}" data-body="${m.body}" data-fuels="${[...new Set(m.versions.map(v=>fuelOf(m,v))).add(m.fuel)].join(" ")}">
@@ -512,6 +578,163 @@ document.getElementById("radargrid").innerHTML = RADAR.map(r=>`
   btn.addEventListener("click",()=>setTheme(!document.body.classList.contains("dark")));
   if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) setTheme(true);
 })();
+
+/* ================= v2: FICHAS TÉCNICAS (preenchimento progressivo, só dado oficial) ================= */
+const FICHAS = {
+  "BYD|Atto 2|1.5 DM-i GL": {torque:"—", cambio:"automático (e-CVT)", tracao:"dianteira", eletrico_km:"até 45 km (NEDC)", autonomia_total:"até 1.000 km (NEDC)", garantia:"6 anos (veículo)"},
+  "BYD|Atto 2|1.5 DM-i GS": {torque:"—", cambio:"automático (e-CVT)", tracao:"dianteira", eletrico_km:"até 110 km (NEDC)", autonomia_total:"até 1.045 km (NEDC)", garantia:"6 anos (veículo)"}
+};
+const FT_LABELS = {torque:"Torque", cambio:"Câmbio", tracao:"Tração", consumo_cidade:"Consumo cidade", consumo_estrada:"Consumo estrada", eletrico_km:"Autonomia elétrica", autonomia_total:"Autonomia total", tanque:"Tanque", portamalas:"Porta-malas", entreeixos:"Entre-eixos", comprimento:"Comprimento", peso:"Peso", garantia:"Garantia", airbags:"Airbags", rodas:"Rodas"};
+function ftOf(b,m,v){ return FICHAS[`${b}|${m}|${v}`] || null; }
+
+/* ================= v2: navegação de views ================= */
+function showView(name){
+  document.getElementById("viewTabela").classList.toggle("hidden", name!=="tabela");
+  document.getElementById("viewComparativo").classList.toggle("hidden", name!=="comparativo");
+  document.querySelectorAll("#mainnav a[data-view]").forEach(a=>a.classList.toggle("active", a.dataset.view===name));
+  if(name==="comparativo") initCmp();
+  window.scrollTo({top:0});
+}
+document.querySelectorAll("#mainnav a[data-view]").forEach(a=>{
+  a.addEventListener("click", e=>{ e.preventDefault(); history.replaceState(null,"","#"+a.dataset.view); showView(a.dataset.view); });
+});
+if(location.hash==="#comparativo") showView("comparativo");
+
+/* ================= v2: comparativo ================= */
+const cmpSel = [null,null,null,null,null];
+let cmpInited = false;
+function initCmp(){
+  if(cmpInited) return; cmpInited = true;
+  const wrap = document.getElementById("cmpslots");
+  wrap.innerHTML = [0,1,2,3,4].map(i=>`
+    <div class="cslot" id="cslot${i}">
+      <div class="slotn"><span>VEÍCULO ${i+1}</span><button class="clr" data-i="${i}" title="Limpar">✕</button></div>
+      <select class="selB" data-i="${i}"><option value="">Marca…</option>${MARKET_DATA.map((b,bi)=>`<option value="${bi}">${b.brand}</option>`).join("")}</select>
+      <select class="selM" data-i="${i}" disabled><option value="">Modelo…</option></select>
+      <select class="selV" data-i="${i}" disabled><option value="">Versão…</option></select>
+    </div>`).join("");
+  wrap.addEventListener("change", e=>{
+    const i = +e.target.dataset.i;
+    const slot = document.getElementById("cslot"+i);
+    const sB = slot.querySelector(".selB"), sM = slot.querySelector(".selM"), sV = slot.querySelector(".selV");
+    if(e.target.classList.contains("selB")){
+      sM.innerHTML = '<option value="">Modelo…</option>'; sV.innerHTML = '<option value="">Versão…</option>'; sV.disabled = true; cmpSel[i]=null;
+      if(sB.value!==""){ sM.disabled=false; MARKET_DATA[+sB.value].models.forEach((m,mi)=>sM.insertAdjacentHTML("beforeend",`<option value="${mi}">${m.model}</option>`)); }
+      else sM.disabled=true;
+    } else if(e.target.classList.contains("selM")){
+      sV.innerHTML = '<option value="">Versão…</option>'; cmpSel[i]=null;
+      if(sM.value!==""){ sV.disabled=false; MARKET_DATA[+sB.value].models[+sM.value].versions.forEach((v,vi)=>sV.insertAdjacentHTML("beforeend",`<option value="${vi}">${v.name} — ${brl(v.price)}</option>`)); }
+      else sV.disabled=true;
+    } else if(e.target.classList.contains("selV")){
+      cmpSel[i] = sV.value==="" ? null : {bi:+sB.value, mi:+sM.value, vi:+sV.value};
+    }
+    renderCmp();
+  });
+  wrap.addEventListener("click", e=>{
+    if(!e.target.classList.contains("clr")) return;
+    const i = +e.target.dataset.i, slot = document.getElementById("cslot"+i);
+    slot.querySelector(".selB").value=""; slot.querySelector(".selM").innerHTML='<option value="">Modelo…</option>';
+    slot.querySelector(".selM").disabled=true; slot.querySelector(".selV").innerHTML='<option value="">Versão…</option>';
+    slot.querySelector(".selV").disabled=true; cmpSel[i]=null; renderCmp();
+  });
+}
+function cmpCars(){
+  return cmpSel.filter(Boolean).map(s=>{
+    const b=MARKET_DATA[s.bi], m=b.models[s.mi], v=m.versions[s.vi];
+    return {b:b.brand, m:m.model, v:v.name, price:v.price, e:v.e, cv:v.cv, s:v.s, body:m.body, fuel:m.fuel, ref:m.ref, ft:ftOf(b.brand,m.model,v.name)};
+  });
+}
+function renderCmp(){
+  const cars = cmpCars(), out = document.getElementById("cmpout");
+  if(cars.length<2){ out.innerHTML = '<div class="cmpempty">Selecione pelo menos 2 veículos para começar a comparação.</div>'; return; }
+  const fmt=(x,f)=>x==null?null:f(x);
+  const rows = [
+    ["Preço público", c=>brl(c.price), "min", c=>c.price],
+    ["Motor", c=>c.e||null, null, null],
+    ["Potência", c=>c.cv?c.cv+" cv":null, "max", c=>c.cv],
+    ["0-100 km/h", c=>c.s!=null?c.s.toFixed(1).replace(".",",")+" s":null, "min", c=>c.s],
+    ["cv por R$ 10 mil", c=>c.cv?(c.cv/(c.price/10000)).toFixed(1).replace(".",","):null, "max", c=>c.cv?c.cv/(c.price/10000):null],
+    ["Carroceria", c=>({hatch:"Hatch",sedan:"Sedã",suv:"SUV",picape:"Picape",furgao:"Furgão",van:"Van",minivan:"Minivan",wagon:"Wagon",esportivo:"Esportivo",buggy:"Buggy"}[c.body]||c.body), null, null],
+    ["Combustível", c=>({gasolina:"Gasolina",flex:"Flex",diesel:"Diesel",eletrico:"Elétrico",hibrido:"Híbrido"}[c.fuel]||c.fuel), null, null],
+  ];
+  for(const k of Object.keys(FT_LABELS)){
+    if(cars.some(c=>c.ft&&c.ft[k])) rows.push([FT_LABELS[k], c=>c.ft&&c.ft[k]?c.ft[k]:null, null, null]);
+  }
+  const bestIdx = (row)=>{
+    if(!row[2]) return -1;
+    const vals = cars.map(row[3]);
+    if(vals.some(v=>v==null)) return -1;
+    const target = row[2]==="min"?Math.min(...vals):Math.max(...vals);
+    const winners = vals.filter(v=>v===target);
+    return winners.length===1 ? vals.indexOf(target) : -1;
+  };
+  let html = '<div style="overflow-x:auto"><table class="cmptable"><tr><th></th>' +
+    cars.map(c=>`<th><span class="carhead">${c.b} ${c.m}<small>${c.v}</small></span></th>`).join("") + "</tr>";
+  rows.forEach(r=>{
+    const bi = bestIdx(r);
+    html += `<tr><td>${r[0]}</td>` + cars.map((c,i)=>{
+      const val = r[1](c);
+      return `<td class="${val==null?"na":""} ${i===bi?"best":""}">${val==null?"— em breve":val}</td>`;
+    }).join("") + "</tr>";
+  });
+  html += "</table></div>";
+  html += veredicto(cars);
+  out.innerHTML = html;
+}
+function veredicto(cars){
+  const parts = [];
+  const cheapest = cars.reduce((a,c)=>c.price<a.price?c:a);
+  const dear = cars.reduce((a,c)=>c.price>a.price?c:a);
+  parts.push(`O <b>${cheapest.b} ${cheapest.m} ${cheapest.v}</b> é a porta de entrada do grupo (${brl(cheapest.price)}${cars.length>2?`, ${brl(dear.price-cheapest.price)} abaixo do mais caro`:""}).`);
+  const wcv = cars.filter(c=>c.cv);
+  if(wcv.length>1){
+    const power = wcv.reduce((a,c)=>c.cv>a.cv?c:a);
+    if(power!==cheapest) parts.push(`Em potência, quem manda é o <b>${power.b} ${power.m}</b>, com ${power.cv} cv.`);
+    const eff = wcv.reduce((a,c)=>(c.cv/c.price)>(a.cv/a.price)?c:a);
+    parts.push(`No custo-benefício mecânico (cv por real), o destaque é o <b>${eff.b} ${eff.m} ${eff.v}</b>: ${(eff.cv/(eff.price/10000)).toFixed(1).replace(".",",")} cv a cada R$ 10 mil.`);
+  }
+  const ws = cars.filter(c=>c.s!=null);
+  if(ws.length>1){
+    const fast = ws.reduce((a,c)=>c.s<a.s?c:a);
+    parts.push(`O mais rápido de 0 a 100 é o <b>${fast.b} ${fast.m}</b> (${fast.s.toFixed(1).replace(".",",")} s).`);
+  }
+  return `<div class="veredicto"><div class="vt">◎ VEREDICTO DO RADAR</div><p>${parts.join(" ")}</p><small>Análise automática gerada a partir dos dados da tabela — não é recomendação de compra. Confirme condições na concessionária.</small></div>`;
+}
+
+/* ================= v2: modal ficha técnica ================= */
+const ftback = document.getElementById("ftback");
+document.getElementById("market").addEventListener("click", e=>{
+  const row = e.target.closest(".vrow"); if(!row) return;
+  const b = row.dataset.fb, m = row.dataset.fm, vn = row.dataset.fv;
+  const brand = MARKET_DATA.find(x=>x.brand===b); if(!brand) return;
+  const model = brand.models.find(x=>x.model===m); if(!model) return;
+  const v = model.versions.find(x=>x.name===vn); if(!v) return;
+  const ft = ftOf(b,m,vn) || {};
+  const cells = [];
+  if(v.e) cells.push(["Motor", v.e]);
+  if(v.cv) cells.push(["Potência", v.cv+" cv"]);
+  if(v.s!=null) cells.push(["0-100 km/h", v.s.toFixed(1).replace(".",",")+" s"]);
+  cells.push(["Carroceria", {hatch:"Hatch",sedan:"Sedã",suv:"SUV",picape:"Picape",furgao:"Furgão",van:"Van",minivan:"Minivan",wagon:"Wagon",esportivo:"Esportivo",buggy:"Buggy"}[model.body]||model.body]);
+  cells.push(["Combustível", {gasolina:"Gasolina",flex:"Flex",diesel:"Diesel",eletrico:"Elétrico",hibrido:"Híbrido"}[model.fuel]||model.fuel]);
+  for(const k of Object.keys(FT_LABELS)) if(ft[k] && ft[k]!=="—") cells.push([FT_LABELS[k], ft[k]]);
+  cells.push(["Referência", model.ref||"—"]);
+  ftback.innerHTML = `<div class="ftmodal">
+    <div class="fthead">
+      <button class="fclose" aria-label="Fechar">×</button>
+      <div class="fb">${b}</div><div class="fm">${m}</div><div class="fv">${vn}</div>
+      <div class="fp">${brl(v.price)}</div>
+    </div>
+    <div class="ftgrid">${cells.map(c=>`<div class="ftcell"><small>${c[0]}</small><b>${c[1]}</b></div>`).join("")}</div>
+    <div class="ftfoot">Ficha técnica em preenchimento progressivo — novos campos (torque, consumo, porta-malas, dimensões) entram a cada edição semanal, sempre a partir dos dados oficiais da montadora. Preço público sugerido, sem frete/opcionais.</div>
+  </div>`;
+  ftback.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+});
+ftback.addEventListener("click", e=>{
+  if(e.target===ftback || e.target.classList.contains("fclose")){ ftback.classList.add("hidden"); document.body.style.overflow=""; }
+});
+document.addEventListener("keydown", e=>{ if(e.key==="Escape" && !ftback.classList.contains("hidden")){ ftback.classList.add("hidden"); document.body.style.overflow=""; } });
+
 </script>
 </body>
 </html>
