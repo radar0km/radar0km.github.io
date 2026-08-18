@@ -125,6 +125,7 @@ body.dark footer{background:#06121B}
   border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;transition:.15s;text-decoration:none;color:var(--ink)}
 .logochip:hover{border-color:var(--red);transform:translateY(-2px);box-shadow:0 4px 10px rgba(0,0,0,.08)}
 .logochip svg{width:34px;height:34px}
+.logochip img{max-width:60px;max-height:32px;width:auto;height:auto;object-fit:contain;display:block}
 .logochip i{font-style:normal;font-size:9.5px;font-weight:600;text-align:center;line-height:1.1;letter-spacing:.2px}
 
 /* ===== Toolbar ===== */
@@ -156,6 +157,7 @@ main{max-width:1080px;margin:0 auto;padding:26px 24px 10px}
 .blogo{width:52px;height:52px;border:1px solid var(--line);border-radius:9px;background:#fff;
   display:flex;align-items:center;justify-content:center;flex:none}
 .blogo svg{width:40px;height:40px}
+.blogo img{max-width:46px;max-height:40px;width:auto;height:auto;object-fit:contain;display:block}
 .bname{font-family:'Oswald',sans-serif;font-size:24px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;line-height:1}
 .bmeta{font-size:11.5px;color:var(--muted);margin-top:3px}
 .bmeta b{color:var(--red);font-weight:700}
@@ -424,51 +426,50 @@ const wordmark = (txt, fg, size=11, weight=800, ls=0.5, style="") =>
   S(`<text x="24" y="24" text-anchor="middle" dominant-baseline="central" font-family="'Archivo Narrow','Arial Narrow',Arial,sans-serif" font-size="${size}" font-weight="${weight}" letter-spacing="${ls}" fill="${fg}" ${style}>${txt}</text>`);
 
 const LOGOS = {
-"Audi": S(`<g fill="none" stroke="#4a4a4a" stroke-width="2.6"><circle cx="10" cy="24" r="7.2"/><circle cx="19.3" cy="24" r="7.2"/><circle cx="28.7" cy="24" r="7.2"/><circle cx="38" cy="24" r="7.2"/></g>`),
-"BMW": S(`<circle cx="24" cy="24" r="21" fill="#16171a"/><circle cx="24" cy="24" r="13.5" fill="#fff"/><path d="M24 24V10.5A13.5 13.5 0 0 1 37.5 24Z" fill="#0066b1"/><path d="M24 24H10.5A13.5 13.5 0 0 1 24 10.5Z" fill="#fff"/><path d="M24 24v13.5A13.5 13.5 0 0 1 10.5 24Z" fill="#0066b1"/><path d="M24 24h13.5A13.5 13.5 0 0 1 24 37.5Z" fill="#fff"/><circle cx="24" cy="24" r="13.5" fill="none" stroke="#16171a" stroke-width="1.4"/>`),
-"Mercedes-Benz": S(`<circle cx="24" cy="24" r="20" fill="none" stroke="#333" stroke-width="2.4"/><path d="M24 5.5 L24 24 L8.5 34.5 M24 24 L39.5 34.5" fill="none" stroke="#333" stroke-width="2.6" stroke-linecap="round"/>`),
-"Volkswagen": S(`<circle cx="24" cy="24" r="20.5" fill="#001e50"/><circle cx="24" cy="24" r="17" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M14 13.5 L20 28 L23 20 M24 13.5 L34 13.5 M34 13.5 L28 28 L25 20 M14 13.5 L11 13.5 M12 21 L17.5 34.5 L24 18 L30.5 34.5 L36 21" fill="none" stroke="none"/><path d="M15.5 14 l4.7 12.2 2-5.2-2.7-7z M32.5 14 l-4.7 12.2-2-5.2 2.7-7z M11.8 20.5 l6 15 6.2-15.6 6.2 15.6 6-15-2.8 0-3.3 8.4-4.7-11.9h-2.8 l-4.7 11.9-3.3-8.4z" fill="#fff"/>`),
-"Toyota": S(`<ellipse cx="24" cy="24" rx="21" ry="13.5" fill="none" stroke="#c00" stroke-width="2.4"/><ellipse cx="24" cy="24" rx="9.5" ry="13.5" fill="none" stroke="#c00" stroke-width="2.4"/><ellipse cx="24" cy="17.5" rx="14.5" ry="5.6" fill="none" stroke="#c00" stroke-width="2.4"/>`),
-"Renault": S(`<path d="M24 4 L36.5 24 L24 44 L11.5 24 Z" fill="none" stroke="#111" stroke-width="3"/><path d="M24 12 L31.5 24 L24 36 L16.5 24 Z" fill="none" stroke="#ffcc00" stroke-width="2.2"/>`),
-"Mitsubishi": S(`<g fill="#e60012"><path d="M24 4 L30 14.5 L24 25 L18 14.5Z"/><path d="M6 36 L12 25.5 L24 25.5 L18 36Z"/><path d="M42 36 L36 25.5 L24 25.5 L30 36Z"/></g>`),
-"Chevrolet": S(`<path d="M18.5 18 h11 v-5 h13 l-5 8 h-8 v5 h-11 v-5 h-13 l5-8 h8 Z" fill="#d4af37" stroke="#9c7c1e" stroke-width="1.2" transform="translate(0,8)"/>`),
-"Honda": S(`<rect x="7" y="9" width="34" height="30" rx="7" fill="none" stroke="#cc0000" stroke-width="2.6"/><path d="M16 16 v16 M32 16 v16 M16 24 h16" fill="none" stroke="#cc0000" stroke-width="4" stroke-linecap="round"/>`),
-"Hyundai": S(`<ellipse cx="24" cy="24" rx="20" ry="13" fill="none" stroke="#002c5f" stroke-width="2.6"/><path d="M15 30 C17 22 19 18 21 18 C23 18 23 21 24 24 C25 27 25 30 27 30 C29 30 31 26 33 18" fill="none" stroke="#002c5f" stroke-width="3.6" stroke-linecap="round" transform="skewX(-12) translate(6,0)"/>`),
-"Nissan": S(`<circle cx="24" cy="24" r="19" fill="none" stroke="#1c1c1c" stroke-width="2.6"/><rect x="4" y="19.5" width="40" height="9" fill="#fff"/><rect x="4" y="19.5" width="40" height="9" fill="none" stroke="#1c1c1c" stroke-width="1.6"/><text x="24" y="24.4" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="6.4" font-weight="700" letter-spacing="1" fill="#1c1c1c">NISSAN</text>`),
-"Suzuki": wordmark("S", "#e30613", 34, 900, 0, `font-style="italic"`),
-"Citroën": S(`<g fill="none" stroke="#1d1d1b" stroke-width="3.4" stroke-linejoin="round"><path d="M10 20 L24 11 L38 20"/><path d="M10 33 L24 24 L38 33"/></g>`),
-"Volvo": S(`<circle cx="23" cy="26" r="15" fill="none" stroke="#1c3a63" stroke-width="2.8"/><path d="M33.5 15.5 L41 8 M41 8 h-7 M41 8 v7" fill="none" stroke="#1c3a63" stroke-width="2.8" stroke-linecap="round"/><text x="23" y="26.5" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="6.4" font-weight="700" letter-spacing="1.4" fill="#1c3a63">VOLVO</text>`),
-"Lexus": S(`<ellipse cx="24" cy="24" rx="20" ry="12.5" fill="none" stroke="#1a1a1a" stroke-width="2.4"/><path d="M17 15 L17 30 L34 30" fill="none" stroke="#1a1a1a" stroke-width="3.2" transform="rotate(-14 24 24) translate(1,-1)"/>`),
-"MG": S(`<path d="M24 5 L38 10.5 L43 24 L38 37.5 L24 43 L10 37.5 L5 24 L10 10.5 Z" fill="none" stroke="#c8102e" stroke-width="2.6"/><text x="24" y="24.5" text-anchor="middle" dominant-baseline="central" font-family="'Archivo Narrow',Arial,sans-serif" font-size="14" font-weight="900" fill="#c8102e" font-style="italic">MG</text>`),
-"Ford": S(`<ellipse cx="24" cy="24" rx="21" ry="12.5" fill="#003478"/><ellipse cx="24" cy="24" rx="19" ry="10.7" fill="none" stroke="#fff" stroke-width="1.2"/><text x="24" y="24.5" text-anchor="middle" dominant-baseline="central" font-family="Georgia,'Times New Roman',serif" font-size="12.5" font-weight="700" font-style="italic" fill="#fff">Ford</text>`),
-"Land Rover": S(`<rect x="3" y="14" width="42" height="20" rx="10" fill="#005a2b"/><text x="24" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" font-weight="700" letter-spacing="1.2" fill="#fff">LAND</text><text x="24" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" font-weight="700" letter-spacing="1.2" fill="#fff">ROVER</text>`),
-"MINI": S(`<g stroke="#1a1a1a" stroke-width="2" fill="none"><path d="M2 24 h9 M4 20 h8 M4 28 h8 M46 24 h-9 M44 20 h-8 M44 28 h-8"/></g><ellipse cx="24" cy="24" rx="12" ry="8.5" fill="none" stroke="#1a1a1a" stroke-width="2"/><text x="24" y="24.5" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="7" font-weight="800" letter-spacing="0.6" fill="#1a1a1a">MINI</text>`),
-"Subaru": S(`<ellipse cx="24" cy="24" rx="21" ry="14" fill="#003399"/><ellipse cx="24" cy="24" rx="19.2" ry="12.4" fill="none" stroke="#9db7e0" stroke-width="1"/><g fill="#fff"><circle cx="15" cy="20" r="3"/><circle cx="23" cy="24.5" r="2.2"/><circle cx="30" cy="20.5" r="1.9"/><circle cx="34.5" cy="26" r="1.7"/><circle cx="27.5" cy="29.5" r="1.7"/><circle cx="19" cy="29" r="1.6"/></g>`),
-"Kia": wordmark("KIA", "#05141f", 17, 900, 1.5, `font-style="italic"`),
-"Fiat": S(`<rect x="6" y="6" width="36" height="36" rx="9" fill="#96172e"/><text x="24" y="25" text-anchor="middle" dominant-baseline="central" font-family="'Archivo Narrow',Arial,sans-serif" font-size="13.5" font-weight="900" letter-spacing="1" fill="#fff" font-style="italic">FIAT</text>`),
-"Jeep": wordmark("Jeep", "#3a5f34", 16, 800, 0.3, `font-style="italic"`),
-"RAM": S(`<path d="M24 4 L40 9 V27 C40 36 33 41.5 24 44 C15 41.5 8 36 8 27 V9 Z" fill="#111"/><text x="24" y="25" text-anchor="middle" dominant-baseline="central" font-family="'Archivo Narrow',Arial,sans-serif" font-size="11.5" font-weight="900" letter-spacing="0.6" fill="#fff">RAM</text>`),
-"Peugeot": S(`<path d="M24 5 L40 11 V26 C40 35.5 33 41 24 43.5 C15 41 8 35.5 8 26 V11 Z" fill="none" stroke="#1a1a1a" stroke-width="2.6"/><text x="24" y="24.5" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="8.5" font-weight="900" fill="#1a1a1a">PGT</text>`),
-"Porsche": S(`<path d="M24 4 L41 9 V25 C41 35 34 41.5 24 44.5 C14 41.5 7 35 7 25 V9 Z" fill="#b8985a"/><text x="24" y="20" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" font-weight="800" letter-spacing="0.5" fill="#1a1a1a">PORSCHE</text><path d="M17 26 h14 M17 31 h14" stroke="#1a1a1a" stroke-width="2"/>`),
-"BYD": S(`<ellipse cx="24" cy="24" rx="21" ry="11.5" fill="none" stroke="#1a1a1a" stroke-width="2"/><text x="24" y="24.5" text-anchor="middle" dominant-baseline="central" font-family="'Archivo Narrow',Arial,sans-serif" font-size="11" font-weight="900" letter-spacing="1" fill="#1a1a1a">BYD</text>`),
-"GWM": wordmark("GWM", "#c8102e", 14, 900, 1.2),
-"CAOA Chery": wordmark("CHERY", "#9e1b32", 11.5, 900, 0.8),
-"Omoda": wordmark("OMODA", "#1a1a1a", 10.5, 800, 2),
-"Jaecoo": wordmark("JAECOO", "#1a1a1a", 10, 800, 1.6),
-"JAC": wordmark("JAC", "#e60012", 15, 900, 1),
-"Zeekr": wordmark("ZEEKR", "#1a1a1a", 11, 900, 1.4),
-"Leapmotor": S(`<text x="24" y="19" text-anchor="middle" font-family="'Archivo Narrow',Arial,sans-serif" font-size="10" font-weight="900" letter-spacing="1" fill="#0a4d3c">LEAP</text><text x="24" y="31" text-anchor="middle" font-family="'Archivo Narrow',Arial,sans-serif" font-size="10" font-weight="900" letter-spacing="1" fill="#0a4d3c">MOTOR</text>`),
-"Geely": S(`<g fill="none" stroke="#123a7d" stroke-width="2.4"><path d="M8 18 a16 10 0 0 1 32 0"/><path d="M8 30 a16 10 0 0 0 32 0"/></g><text x="24" y="24.5" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="7.5" font-weight="800" letter-spacing="1" fill="#123a7d">GEELY</text>`),
-"GAC": S(`<path d="M24 8 C18 20 12 26 6 30 h13 c2-4 3.5-7 5-12 c1.5 5 3 8 5 12 h13 C36 26 30 20 24 8Z" fill="#c8102e"/><text x="24" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="800" letter-spacing="1.5" fill="#c8102e">GAC</text>`),
-"Jetour": wordmark("JETOUR", "#1a1a1a", 10, 900, 1.2),
-"CAOA Changan": wordmark("CHANGAN", "#0b2e63", 9, 900, 0.8),
-"Avatr": wordmark("AVATR", "#1a1a1a", 11, 800, 2),
-"Denza": wordmark("DENZA", "#1a1a1a", 11, 800, 1.6),
-"Foton": wordmark("FOTON", "#00489a", 11, 900, 1.2),
-"Riddara": wordmark("RIDDARA", "#0a4d3c", 9.5, 900, 1),
-"Farizon": wordmark("FARIZON", "#123a7d", 9.5, 900, 1),
-"Neta": wordmark("NETA", "#5b2d8e", 12, 900, 1.6),
-"Volvo Trucks": null,
+"Audi": `<img src="logos/audi.png" alt="Audi" width="96" height="96" loading="lazy" decoding="async">`,
+"Avatr": `<img src="logos/avatr.png" alt="Avatr" width="96" height="96" loading="lazy" decoding="async">`,
+"BMW": `<img src="logos/bmw.png" alt="BMW" width="96" height="96" loading="lazy" decoding="async">`,
+"BYD": `<img src="logos/byd.png" alt="BYD" width="96" height="96" loading="lazy" decoding="async">`,
+"CAOA Changan": `<img src="logos/caoa-changan.png" alt="CAOA Changan" width="96" height="96" loading="lazy" decoding="async">`,
+"CAOA Chery": `<img src="logos/caoa-chery.png" alt="CAOA Chery" width="96" height="96" loading="lazy" decoding="async">`,
+"Chevrolet": `<img src="logos/chevrolet.png" alt="Chevrolet" width="96" height="96" loading="lazy" decoding="async">`,
+"Citroën": `<img src="logos/citroen.png" alt="Citroën" width="96" height="96" loading="lazy" decoding="async">`,
+"Denza": `<img src="logos/denza.png" alt="Denza" width="96" height="96" loading="lazy" decoding="async">`,
+"Farizon": `<img src="logos/farizon.png" alt="Farizon" width="96" height="96" loading="lazy" decoding="async">`,
+"Fiat": `<img src="logos/fiat.svg" alt="Fiat" width="96" height="96" loading="lazy" decoding="async">`,
+"Ford": `<img src="logos/ford.png" alt="Ford" width="96" height="96" loading="lazy" decoding="async">`,
+"Foton": `<img src="logos/foton.png" alt="Foton" width="96" height="96" loading="lazy" decoding="async">`,
+"GAC": `<img src="logos/gac.png" alt="GAC" width="96" height="96" loading="lazy" decoding="async">`,
+"Geely": `<img src="logos/geely.png" alt="Geely" width="96" height="96" loading="lazy" decoding="async">`,
+"GWM": `<img src="logos/gwm.png" alt="GWM" width="96" height="96" loading="lazy" decoding="async">`,
+"Honda": `<img src="logos/honda.png" alt="Honda" width="96" height="96" loading="lazy" decoding="async">`,
+"Hyundai": `<img src="logos/hyundai.png" alt="Hyundai" width="96" height="96" loading="lazy" decoding="async">`,
+"JAC": `<img src="logos/jac.png" alt="JAC" width="96" height="96" loading="lazy" decoding="async">`,
+"Jaecoo": `<img src="logos/jaecoo.png" alt="Jaecoo" width="96" height="96" loading="lazy" decoding="async">`,
+"Jeep": `<img src="logos/jeep.png" alt="Jeep" width="96" height="96" loading="lazy" decoding="async">`,
+"Jetour": `<img src="logos/jetour.png" alt="Jetour" width="96" height="96" loading="lazy" decoding="async">`,
+"Kia": `<img src="logos/kia.png" alt="Kia" width="96" height="96" loading="lazy" decoding="async">`,
+"Land Rover": `<img src="logos/land-rover.png" alt="Land Rover" width="96" height="96" loading="lazy" decoding="async">`,
+"Leapmotor": `<img src="logos/leapmotor.png" alt="Leapmotor" width="96" height="96" loading="lazy" decoding="async">`,
+"Lexus": `<img src="logos/lexus.png" alt="Lexus" width="96" height="96" loading="lazy" decoding="async">`,
+"Mercedes-Benz": `<img src="logos/mercedes-benz.png" alt="Mercedes-Benz" width="96" height="96" loading="lazy" decoding="async">`,
+"MG": `<img src="logos/mg.png" alt="MG" width="96" height="96" loading="lazy" decoding="async">`,
+"MINI": `<img src="logos/mini.png" alt="MINI" width="96" height="96" loading="lazy" decoding="async">`,
+"Mitsubishi": `<img src="logos/mitsubishi.svg" alt="Mitsubishi" width="96" height="96" loading="lazy" decoding="async">`,
+"Neta": `<img src="logos/neta.png" alt="Neta" width="96" height="96" loading="lazy" decoding="async">`,
+"Nissan": `<img src="logos/nissan.png" alt="Nissan" width="96" height="96" loading="lazy" decoding="async">`,
+"Omoda": `<img src="logos/omoda.png" alt="Omoda" width="96" height="96" loading="lazy" decoding="async">`,
+"Peugeot": `<img src="logos/peugeot.png" alt="Peugeot" width="96" height="96" loading="lazy" decoding="async">`,
+"Porsche": `<img src="logos/porsche.png" alt="Porsche" width="96" height="96" loading="lazy" decoding="async">`,
+"RAM": `<img src="logos/ram.png" alt="RAM" width="96" height="96" loading="lazy" decoding="async">`,
+"Renault": `<img src="logos/renault.png" alt="Renault" width="96" height="96" loading="lazy" decoding="async">`,
+"Riddara": `<img src="logos/riddara.png" alt="Riddara" width="96" height="96" loading="lazy" decoding="async">`,
+"Subaru": `<img src="logos/subaru.svg" alt="Subaru" width="96" height="96" loading="lazy" decoding="async">`,
+"Suzuki": `<img src="logos/suzuki.png" alt="Suzuki" width="96" height="96" loading="lazy" decoding="async">`,
+"Toyota": `<img src="logos/toyota.png" alt="Toyota" width="96" height="96" loading="lazy" decoding="async">`,
+"Volkswagen": `<img src="logos/volkswagen.png" alt="Volkswagen" width="96" height="96" loading="lazy" decoding="async">`,
+"Volvo": `<img src="logos/volvo.png" alt="Volvo" width="96" height="96" loading="lazy" decoding="async">`,
+"Zeekr": `<img src="logos/zeekr.png" alt="Zeekr" width="96" height="96" loading="lazy" decoding="async">`,
 };
 
 // Miniaturas de veículo por carroceria (vista lateral)
@@ -644,8 +645,14 @@ document.getElementById("radargrid").innerHTML = RADAR.map(r=>`
     document.body.classList.toggle("dark",dark);
     btn.innerHTML = dark ? "☀ &nbsp;Modo papel" : "☾ &nbsp;Modo radar";
   }
-  btn.addEventListener("click",()=>setTheme(!document.body.classList.contains("dark")));
-  if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) setTheme(true);
+  btn.addEventListener("click",()=>{
+    const dark=!document.body.classList.contains("dark");
+    setTheme(dark);
+    try{ localStorage.setItem("radar-tema", dark?"escuro":"claro"); }catch(e){}
+  });
+  // Padrão do site é o modo papel (claro). O modo radar só entra se a pessoa escolher.
+  let pref=null; try{ pref=localStorage.getItem("radar-tema"); }catch(e){}
+  setTheme(pref==="escuro");
 })();
 
 /* ================= v2: FICHAS TÉCNICAS (preenchimento progressivo, só dado oficial) ================= */
