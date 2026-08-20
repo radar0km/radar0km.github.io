@@ -1438,10 +1438,10 @@
     "body": "esportivo",
     "fuel": "eletrico",
     "ref": "fev/26",
-    "obs": "Marca de luxo da BYD",
+    "obs": "Marca de luxo da BYD. Potência combinada não divulgada em fonte oficial — valor mantido da edição anterior.",
     "versions": [
      {
-      "name": "950 cv",
+      "name": "Versão única",
       "price": 650000,
       "e": "3 motores elétricos",
       "cv": 965,
@@ -3904,13 +3904,14 @@
     "ref": "nov/25",
     "versions": [
      {
-      "name": "62 kWh 425 cv",
+      "name": "XPower AWD 64 kWh",
       "price": 229800,
       "e": "2 motores elétricos",
       "cv": 435,
       "s": 3.8
      }
-    ]
+    ],
+    "obs": "Potência 435 cv confirmada no site oficial da MG. Comfort e Luxury (190 cv) ainda não cadastradas."
    },
    {
     "model": "S5",
