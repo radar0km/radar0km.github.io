@@ -1,0 +1,622 @@
+{
+ "BYD|Atto 2|1.5 DM-i GL": {
+  "cambio": "automático (e-CVT)",
+  "tracao": "dianteira",
+  "eletrico_km": "até 45 km (NEDC)",
+  "autonomia_total": "até 1.000 km (NEDC)",
+  "garantia": "6 anos (veículo)"
+ },
+ "BYD|Atto 2|1.5 DM-i GS": {
+  "cambio": "automático (e-CVT)",
+  "tracao": "dianteira",
+  "eletrico_km": "até 45 km (NEDC)",
+  "autonomia_total": "até 1.000 km (NEDC)",
+  "garantia": "6 anos (veículo)"
+ },
+ "Fiat|Strada|Endurance CP 1.3 MT": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "13,1 km/l (g) / 9,3 km/l (e)",
+  "consumo_estrada": "14,2 km/l (g) / 10,0 km/l (e)",
+  "portamalas": "1.354 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.737 mm",
+  "peso": "1.083 kg"
+ },
+ "Fiat|Strada|Freedom CP 1.3 MT": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,9 km/l (g) / 8,9 km/l (e)",
+  "consumo_estrada": "14,7 km/l (g) / 10,4 km/l (e)",
+  "portamalas": "1.354 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.737 mm",
+  "peso": "1.095 kg"
+ },
+ "Fiat|Strada|Freedom CD 1.3 MT": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,5 km/l (g) / 8,9 km/l (e)",
+  "consumo_estrada": "14,3 km/l (g) / 10,0 km/l (e)",
+  "portamalas": "844 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.737 mm",
+  "peso": "1.177 kg"
+ },
+ "Fiat|Strada|Volcano CD 1.3 CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,5 km/l (g) / 8,8 km/l (e)",
+  "consumo_estrada": "13,3 km/l (g) / 9,8 km/l (e)",
+  "portamalas": "844 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.737 mm",
+  "peso": "1.215 kg"
+ },
+ "Fiat|Strada|Ultra T200 CD CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,1 km/l (g) / 8,3 km/l (e)",
+  "consumo_estrada": "13,2 km/l (g) / 9,4 km/l (e)",
+  "portamalas": "844 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.737 mm",
+  "peso": "1.251 kg"
+ },
+ "Fiat|Strada|Ranch T200 CD CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,1 km/l (g) / 8,3 km/l (e)",
+  "consumo_estrada": "13,2 km/l (g) / 9,4 km/l (e)",
+  "portamalas": "844 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.737 mm",
+  "peso": "1.253 kg"
+ },
+ "Fiat|Argo|Drive 1.0": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "13,6 km/l (g) / 9,4 km/l (e)",
+  "consumo_estrada": "14,5 km/l (g) / 10,4 km/l (e)",
+  "portamalas": "327 L",
+  "tanque": "45 L",
+  "entreeixos": "2.521 mm",
+  "peso": "1.083 kg"
+ },
+ "Fiat|Argo|Drive 1.3 CVT": {
+  "cambio": "automático CVT (7 marchas simuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,8 km/l (g) / 9,0 km/l (e)",
+  "consumo_estrada": "14,3 km/l (g) / 10,3 km/l (e)",
+  "portamalas": "327 L",
+  "tanque": "45 L",
+  "entreeixos": "2.521 mm",
+  "peso": "1.140 kg"
+ },
+ "Fiat|Argo|Trekking 1.3 CVT": {
+  "cambio": "automático CVT (7 marchas simuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,8 km/l (g) / 9,0 km/l (e)",
+  "consumo_estrada": "14,3 km/l (g) / 10,3 km/l (e)",
+  "portamalas": "327 L",
+  "tanque": "45 L",
+  "entreeixos": "2.521 mm",
+  "peso": "1.161 kg"
+ },
+ "Chevrolet|Onix|1.0 MT": {
+  "cambio": "manual de 6 marchas",
+  "portamalas": "303 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Chevrolet|Onix|1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "303 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Chevrolet|Onix|Activ 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "303 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Chevrolet|Onix|Premier 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "303 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Chevrolet|Onix|RS 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "303 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Volkswagen|Tera|MPI MT": {
+  "cambio": "manual",
+  "portamalas": "350 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Volkswagen|Tera|170 TSI MT": {
+  "cambio": "manual",
+  "portamalas": "350 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Volkswagen|Tera|Comfort 170 TSI AT": {
+  "cambio": "automático",
+  "portamalas": "350 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Volkswagen|Tera|High 170 TSI AT": {
+  "cambio": "automático",
+  "portamalas": "350 L",
+  "garantia": "3 anos",
+  "airbags": "6"
+ },
+ "Volkswagen|Polo|Track 1.0 MPI": {
+  "portamalas": "300 L",
+  "airbags": "4"
+ },
+ "Volkswagen|Polo|Sense 170 TSI": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "300 L"
+ },
+ "Volkswagen|Polo|Highline 170 TSI AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "300 L"
+ },
+ "Volkswagen|T-Cross|Sense 200 TSI": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "373–420 L (VDA)"
+ },
+ "Volkswagen|T-Cross|200 TSI AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "373–420 L (VDA)"
+ },
+ "Volkswagen|T-Cross|Comfortline 200 TSI": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "373–420 L (VDA)"
+ },
+ "Volkswagen|T-Cross|Highline 250 TSI": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "373–420 L (VDA)"
+ },
+ "Volkswagen|T-Cross|Extreme 250 TSI": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "373–420 L (VDA)"
+ },
+ "Volkswagen|Nivus|Comfortline 200 TSI": {
+  "cambio": "automático de 6 marchas"
+ },
+ "Volkswagen|Nivus|Highline 200 TSI": {
+  "cambio": "automático de 6 marchas"
+ },
+ "Volkswagen|Nivus|GTS 250 TSI": {
+  "cambio": "automático de 6 marchas"
+ },
+ "Volkswagen|Saveiro|Robust CS 1.6 MT": {
+  "cambio": "manual de 5 marchas"
+ },
+ "Volkswagen|Saveiro|Trendline CS 1.6 MT": {
+  "cambio": "manual de 5 marchas"
+ },
+ "Volkswagen|Saveiro|Robust CD 1.6 MT": {
+  "cambio": "manual de 5 marchas"
+ },
+ "Volkswagen|Saveiro|Extreme CD 1.6 MT": {
+  "cambio": "manual de 5 marchas"
+ },
+ "BYD|Dolphin Mini|GL": {
+  "tracao": "dianteira",
+  "consumo_cidade": "0,39 MJ/km (PBEV, combinado)",
+  "portamalas": "230 L",
+  "entreeixos": "2.500 mm",
+  "garantia": "6 anos/200.000 km (veículo); 8 anos/200.000 km (bateria)",
+  "airbags": "6",
+  "peso": "1.165 kg"
+ },
+ "BYD|Dolphin Mini|GS": {
+  "tracao": "dianteira",
+  "consumo_cidade": "0,41 MJ/km (PBEV, combinado)",
+  "portamalas": "230 L",
+  "entreeixos": "2.500 mm",
+  "garantia": "6 anos/200.000 km (veículo); 8 anos/200.000 km (bateria)",
+  "airbags": "6",
+  "peso": "1.239 kg"
+ },
+ "Hyundai|HB20|Comfort 1.0 MT": {
+  "cambio": "manual de 5 marchas",
+  "portamalas": "300 L",
+  "entreeixos": "2.530 mm",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Hyundai|HB20|Limited 1.0 MT": {
+  "cambio": "manual de 5 marchas",
+  "portamalas": "300 L",
+  "entreeixos": "2.530 mm",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Hyundai|HB20|Limited 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "300 L",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Hyundai|HB20|Platinum 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "300 L",
+  "entreeixos": "2.530 mm",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Hyundai|Creta|Comfort 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "422 L",
+  "entreeixos": "2.610 mm",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Hyundai|Creta|Limited 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "422 L",
+  "entreeixos": "2.610 mm",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Hyundai|Creta|Platinum 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "422 L",
+  "entreeixos": "2.610 mm",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Hyundai|Creta|N Line 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "portamalas": "422 L",
+  "entreeixos": "2.610 mm",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Hyundai|Creta|Ultimate 1.6 Turbo AT": {
+  "cambio": "automatizado de dupla embreagem, 7 marchas",
+  "portamalas": "422 L",
+  "entreeixos": "2.610 mm",
+  "garantia": "5 anos sem limite de km",
+  "airbags": "6"
+ },
+ "Fiat|Mobi|Like 1.0": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "14,0 km/l (g) / 9,8 km/l (e)",
+  "consumo_estrada": "15,1 km/l (g) / 10,6 km/l (e)",
+  "portamalas": "200 L",
+  "tanque": "44 L",
+  "entreeixos": "2.304 mm",
+  "peso": "955 kg"
+ },
+ "Fiat|Mobi|Trekking 1.0": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "14,0 km/l (g) / 9,8 km/l (e)",
+  "consumo_estrada": "15,1 km/l (g) / 10,6 km/l (e)",
+  "portamalas": "200 L",
+  "tanque": "44 L",
+  "entreeixos": "2.304 mm",
+  "peso": "969 kg"
+ },
+ "BYD|Song Pro|1.5 DM-i GL": {
+  "tracao": "dianteira",
+  "consumo_cidade": "0,58 MJ/km (PBEV, combinado)",
+  "portamalas": "520 L",
+  "tanque": "52 L",
+  "entreeixos": "2.710 mm",
+  "garantia": "6 anos/200.000 km (veículo); 8 anos/200.000 km (bateria)",
+  "airbags": "6",
+  "peso": "1.675 kg"
+ },
+ "BYD|Song Pro|1.5 DM-i GS": {
+  "tracao": "dianteira",
+  "consumo_cidade": "0,60 MJ/km (PBEV, combinado)",
+  "portamalas": "520 L",
+  "tanque": "52 L",
+  "entreeixos": "2.710 mm",
+  "garantia": "6 anos/200.000 km (veículo); 8 anos/200.000 km (bateria)",
+  "airbags": "6",
+  "peso": "1.735 kg"
+ },
+ "Renault|Kwid|Zen 1.0": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "14,6 km/l (g) / 10,4 km/l (e)",
+  "consumo_estrada": "15,5 km/l (g) / 10,8 km/l (e)",
+  "portamalas": "290 L",
+  "tanque": "38 L",
+  "entreeixos": "2.423 mm",
+  "airbags": "4",
+  "peso": "818–820 kg"
+ },
+ "Renault|Kwid|Intense 1.0": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "14,6 km/l (g) / 10,4 km/l (e)",
+  "consumo_estrada": "15,5 km/l (g) / 10,8 km/l (e)",
+  "portamalas": "290 L",
+  "tanque": "38 L",
+  "entreeixos": "2.423 mm",
+  "airbags": "4",
+  "peso": "818–820 kg"
+ },
+ "Renault|Kwid|Outsider 1.0": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "14,6 km/l (g) / 10,4 km/l (e)",
+  "consumo_estrada": "15,5 km/l (g) / 10,8 km/l (e)",
+  "portamalas": "290 L",
+  "tanque": "38 L",
+  "entreeixos": "2.423 mm",
+  "airbags": "4",
+  "peso": "825 kg"
+ },
+ "Chevrolet|Tracker|1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "consumo_cidade": "11,5 km/l (g) / 8,1 km/l (e)",
+  "consumo_estrada": "13,8 km/l (g) / 9,9 km/l (e)",
+  "garantia": "até 5 anos",
+  "airbags": "6"
+ },
+ "Chevrolet|Tracker|LT 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "consumo_cidade": "11,5 km/l (g) / 8,1 km/l (e)",
+  "consumo_estrada": "13,8 km/l (g) / 9,9 km/l (e)",
+  "garantia": "até 5 anos",
+  "airbags": "6"
+ },
+ "Chevrolet|Tracker|LTZ 1.0 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "consumo_cidade": "11,5 km/l (g) / 8,1 km/l (e)",
+  "consumo_estrada": "13,8 km/l (g) / 9,9 km/l (e)",
+  "garantia": "até 5 anos",
+  "airbags": "6"
+ },
+ "Chevrolet|Tracker|Premier 1.2 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "consumo_cidade": "11,0 km/l (g) / 7,6 km/l (e)",
+  "consumo_estrada": "13,7 km/l (g) / 9,9 km/l (e)",
+  "garantia": "até 5 anos",
+  "airbags": "6"
+ },
+ "Chevrolet|Tracker|RS 1.2 Turbo AT": {
+  "cambio": "automático de 6 marchas",
+  "consumo_cidade": "11,0 km/l (g) / 7,6 km/l (e)",
+  "consumo_estrada": "13,7 km/l (g) / 9,9 km/l (e)",
+  "garantia": "até 5 anos",
+  "airbags": "6"
+ },
+ "Jeep|Compass|Sport T270": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "10,5 km/l (g) / 7,4 km/l (e)",
+  "consumo_estrada": "12,1 km/l (g) / 8,7 km/l (e)",
+  "portamalas": "476 L",
+  "tanque": "60 L",
+  "entreeixos": "2.636 mm",
+  "garantia": "5 anos",
+  "peso": "1.504 kg"
+ },
+ "Jeep|Compass|Longitude T270": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "10,3 km/l (g) / 7,1 km/l (e)",
+  "consumo_estrada": "11,9 km/l (g) / 8,6 km/l (e)",
+  "portamalas": "476 L",
+  "tanque": "60 L",
+  "entreeixos": "2.636 mm",
+  "garantia": "5 anos",
+  "peso": "1.585 kg"
+ },
+ "Jeep|Compass|Limited T270": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "10,2 km/l (g) / 7,2 km/l (e)",
+  "consumo_estrada": "11,7 km/l (g) / 8,3 km/l (e)",
+  "portamalas": "476 L",
+  "tanque": "60 L",
+  "entreeixos": "2.636 mm",
+  "garantia": "5 anos",
+  "peso": "1.589 kg"
+ },
+ "Jeep|Compass|Série S T270": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "10,2 km/l (g) / 7,2 km/l (e)",
+  "consumo_estrada": "11,7 km/l (g) / 8,3 km/l (e)",
+  "portamalas": "476 L",
+  "tanque": "60 L",
+  "entreeixos": "2.636 mm",
+  "garantia": "5 anos",
+  "peso": "1.589 kg"
+ },
+ "Jeep|Compass|Overland Hurricane 2.0 4x4": {
+  "cambio": "automático de 9 marchas",
+  "tracao": "4x4 (Jeep Active Drive Low)",
+  "entreeixos": "2.636 mm",
+  "garantia": "5 anos"
+ },
+ "Jeep|Compass|Blackhawk Hurricane 2.0 4x4": {
+  "cambio": "automático de 9 marchas",
+  "tracao": "4x4 com reduzida e seletor de terrenos",
+  "consumo_cidade": "8,5 km/l (gasolina)",
+  "consumo_estrada": "10,8 km/l (gasolina)",
+  "portamalas": "476 L",
+  "tanque": "55 L",
+  "entreeixos": "2.636 mm",
+  "garantia": "5 anos",
+  "peso": "1.720 kg"
+ },
+ "Fiat|Toro|Endurance T270 Flex": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "9,8 km/l (g) / 6,8 km/l (e)",
+  "consumo_estrada": "11,2 km/l (g) / 7,9 km/l (e)",
+  "portamalas": "937 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.982 mm",
+  "peso": "1.659 kg"
+ },
+ "Fiat|Toro|Freedom T270 Flex": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "9,4 km/l (g) / 6,5 km/l (e)",
+  "consumo_estrada": "10,8 km/l (g) / 7,8 km/l (e)",
+  "portamalas": "937 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.982 mm",
+  "peso": "1.670 kg"
+ },
+ "Fiat|Toro|Volcano T270 MHEV": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "10,5 km/l (g) / 7,3 km/l (e)",
+  "consumo_estrada": "10,7 km/l (g) / 7,6 km/l (e)",
+  "portamalas": "937 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.982 mm",
+  "peso": "1.722 kg"
+ },
+ "Fiat|Toro|Ultra T270 MHEV": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "10,5 km/l (g) / 7,3 km/l (e)",
+  "consumo_estrada": "10,7 km/l (g) / 7,6 km/l (e)",
+  "portamalas": "937 L (caçamba)",
+  "tanque": "55 L",
+  "entreeixos": "2.982 mm",
+  "peso": "1.753 kg"
+ },
+ "Fiat|Toro|Volcano 2.2 TD 4x4": {
+  "cambio": "automático de 9 marchas",
+  "tracao": "integral (4x4)",
+  "consumo_cidade": "10,5 km/l (diesel)",
+  "consumo_estrada": "13,6 km/l (diesel)",
+  "portamalas": "937 L (caçamba)",
+  "tanque": "60 L",
+  "entreeixos": "2.982 mm",
+  "peso": "1.910 kg"
+ },
+ "Fiat|Toro|Ranch 2.2 TD 4x4": {
+  "cambio": "automático de 9 marchas",
+  "tracao": "integral (4x4)",
+  "consumo_cidade": "10,5 km/l (diesel)",
+  "consumo_estrada": "13,6 km/l (diesel)",
+  "portamalas": "937 L (caçamba)",
+  "tanque": "60 L",
+  "entreeixos": "2.982 mm",
+  "peso": "1.945 kg"
+ },
+ "Fiat|Pulse|Drive 1.3 MT": {
+  "cambio": "manual de 5 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,6 km/l (g) / 9,0 km/l (e)",
+  "consumo_estrada": "14,5 km/l (g) / 10,3 km/l (e)",
+  "portamalas": "370 L",
+  "tanque": "47 L",
+  "entreeixos": "2.532 mm",
+  "peso": "1.140 kg"
+ },
+ "Fiat|Pulse|Drive 1.3 CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "13,0 km/l (g) / 8,9 km/l (e)",
+  "consumo_estrada": "14,7 km/l (g) / 10,5 km/l (e)",
+  "portamalas": "370 L",
+  "tanque": "45 L",
+  "entreeixos": "2.532 mm",
+  "peso": "1.180 kg"
+ },
+ "Fiat|Pulse|Turbo 200 CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,3 km/l (g) / 8,6 km/l (e)",
+  "consumo_estrada": "14,4 km/l (g) / 10,0 km/l (e)",
+  "portamalas": "370 L",
+  "tanque": "45 L",
+  "entreeixos": "2.532 mm",
+  "peso": "1.234 kg"
+ },
+ "Fiat|Pulse|Audace T200 Hybrid CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "13,4 km/l (g) / 9,3 km/l (e)",
+  "consumo_estrada": "14,4 km/l (g) / 10,2 km/l (e)",
+  "portamalas": "370 L",
+  "tanque": "45 L",
+  "entreeixos": "2.532 mm",
+  "peso": "1.234 kg"
+ },
+ "Fiat|Pulse|Impetus T200 Hybrid CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "13,4 km/l (g) / 9,3 km/l (e)",
+  "consumo_estrada": "14,4 km/l (g) / 10,2 km/l (e)",
+  "portamalas": "370 L",
+  "tanque": "45 L",
+  "entreeixos": "2.532 mm",
+  "peso": "1.245 kg"
+ },
+ "Fiat|Fastback|Turbo 200 CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,1 km/l (g) / 8,5 km/l (e)",
+  "consumo_estrada": "14,3 km/l (g) / 10,1 km/l (e)",
+  "portamalas": "600 L",
+  "tanque": "45 L",
+  "entreeixos": "2.533 mm",
+  "peso": "1.245 kg"
+ },
+ "Fiat|Fastback|Audace T200 Hybrid CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,6 km/l (g) / 8,9 km/l (e)",
+  "consumo_estrada": "13,9 km/l (g) / 9,8 km/l (e)",
+  "portamalas": "600 L",
+  "tanque": "45 L",
+  "entreeixos": "2.533 mm",
+  "peso": "1.253 kg"
+ },
+ "Fiat|Fastback|Impetus T200 Hybrid CVT": {
+  "cambio": "automático CVT (7 marchas emuladas)",
+  "tracao": "dianteira",
+  "consumo_cidade": "12,6 km/l (g) / 8,9 km/l (e)",
+  "consumo_estrada": "13,9 km/l (g) / 9,8 km/l (e)",
+  "portamalas": "600 L",
+  "tanque": "45 L",
+  "entreeixos": "2.533 mm",
+  "peso": "1.271 kg"
+ },
+ "Fiat|Fastback|Limited Ed. T270 AT6": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "11,3 km/l (g) / 7,8 km/l (e)",
+  "consumo_estrada": "13,6 km/l (g) / 9,8 km/l (e)",
+  "portamalas": "600 L",
+  "tanque": "45 L",
+  "entreeixos": "2.533 mm",
+  "peso": "1.310 kg"
+ },
+ "Fiat|Fastback|Abarth T270 AT6": {
+  "cambio": "automático de 6 marchas",
+  "tracao": "dianteira",
+  "consumo_cidade": "10,8 km/l (g) / 7,3 km/l (e)",
+  "consumo_estrada": "12,9 km/l (g) / 9,0 km/l (e)",
+  "portamalas": "600 L",
+  "tanque": "45 L",
+  "entreeixos": "2.530 mm",
+  "peso": "1.310 kg"
+ }
+}

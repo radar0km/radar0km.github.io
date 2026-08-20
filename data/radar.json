@@ -1,0 +1,62 @@
+[
+ {
+  "brand": "DFM (Dongfeng)",
+  "status": "chegando",
+  "note": "Estreia apresentada em ago/2026 — hatch elétrico Box e SUV Vigo; entregas previstas para set/2026."
+ },
+ {
+  "brand": "Lepas",
+  "status": "chegando",
+  "note": "Nova marca do grupo Chery/CAOA anunciada com 3 SUVs; sem vendas até ago/2026."
+ },
+ {
+  "brand": "Aito",
+  "status": "chegando",
+  "note": "Marca ligada à Huawei (grupo Seres); estreia anunciada para 2026, ainda sem preços."
+ },
+ {
+  "brand": "XPeng",
+  "status": "chegando",
+  "note": "Operação própria confirmada para 2027."
+ },
+ {
+  "brand": "Lynk & Co",
+  "status": "chegando",
+  "note": "Chegada adiada para 2027 (modelo Z20 confirmado)."
+ },
+ {
+  "brand": "Polestar",
+  "status": "chegando",
+  "note": "Estreia anunciada (Polestar 2 e 4), sem início de vendas até ago/2026."
+ },
+ {
+  "brand": "smart",
+  "status": "chegando",
+  "note": "Retorno sinalizado com as linhas #1, #3 e #5 (2027+)."
+ },
+ {
+  "brand": "Rox Motor",
+  "status": "chegando",
+  "note": "SUV Rox 01 registrado no Brasil em abr/2026; vendas não iniciadas."
+ },
+ {
+  "brand": "Tesla",
+  "status": "ausente",
+  "note": "Não vende oficialmente no Brasil; chegada estimada até 2027."
+ },
+ {
+  "brand": "Jaguar",
+  "status": "saiu",
+  "note": "Encerrou as vendas de 0 km em jan/2025; relançamento elétrico ainda não chegou."
+ },
+ {
+  "brand": "Seres",
+  "status": "saiu",
+  "note": "Encerrou a operação no Brasil."
+ },
+ {
+  "brand": "Neta",
+  "status": "saindo",
+  "note": "Matriz em falência na China; no Brasil restou 1 concessionária vendendo estoque."
+ }
+]
